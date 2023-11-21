@@ -1,6 +1,5 @@
 import { enqueueSnackbar } from 'notistack';
 import { FC } from 'react';
-import { useCookies } from 'react-cookie';
 import { useNavigate } from 'react-router-dom';
 
 import { NAVBAR, NOTISTACK_DURATION, ROUTES } from 'common';
@@ -8,7 +7,6 @@ import { NAVBAR, NOTISTACK_DURATION, ROUTES } from 'common';
 import styles from './styles';
 
 const Navbar: FC = () => {
-  const removeCookie = useCookies(['user'])[2];
   const navigate = useNavigate();
   return (
     <nav className={styles['navbar']}>
@@ -79,7 +77,6 @@ const Navbar: FC = () => {
             <a
               className={styles['links-container__item']}
               onClick={() => {
-                removeCookie('user');
                 enqueueSnackbar('Logout successfully', {
                   variant: 'success',
                   autoHideDuration: NOTISTACK_DURATION,
