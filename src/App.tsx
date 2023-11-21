@@ -19,14 +19,14 @@ const App = () => {
           queries: {
             onError: (error: any) => {
               if ((error as TRPCError).message == 'UNAUTHORIZED') {
-                document.location.href = '/dashboard-client/' + ROUTES.SIGN_IN;
+                document.location.href = '/dashboard-client' + ROUTES.SIGN_IN;
               }
             },
           },
           mutations: {
             onError: (error: unknown) => {
               if ((error as TRPCError).message == 'UNAUTHORIZED') {
-                document.location.href = '/dashboard-client/' + ROUTES.SIGN_IN;
+                document.location.href = '/dashboard-client' + ROUTES.SIGN_IN;
               }
             },
           },
