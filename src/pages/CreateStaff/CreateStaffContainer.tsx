@@ -13,7 +13,7 @@ import { trpc } from 'index';
 import { staffValidationSchema } from 'validation';
 
 import { enqueueSnackbar } from 'notistack';
-import { CompanyType } from '../../../../dashboard-server/src/types';
+import { CompanyType } from '../../../../dashboard/dashboard-server/src/types';
 import CreateStaff from './CreateStaff';
 
 const CreateStaffContainer: FC = () => {

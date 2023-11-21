@@ -3,7 +3,7 @@ import { Button, Modal } from 'react-bootstrap';
 
 import { IModal } from 'components/DropModal/types';
 
-import { UserProfile } from '../../../../dashboard-server/src/types';
+import { UserProfile } from '../../../../dashboard/dashboard-server/src/types';
 import styles from './styles';
 
 const ProfilesOutput = ({

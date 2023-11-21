@@ -12,7 +12,7 @@ import {
 import {
   DepartmentsWithCount,
   UserProfile,
-} from '../../../../dashboard-server/src/types';
+} from '../../../../dashboard/dashboard-server/src/types';
 import { InfoPanel, Statistics } from './components';
 import { styles as infoPanel } from './components/InfoPanel';
 import {

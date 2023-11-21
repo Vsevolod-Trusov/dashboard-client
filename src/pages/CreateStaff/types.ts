@@ -1,7 +1,7 @@
 import { FormikProps } from 'formik';
 
 import { ChangeEvent } from 'react';
-import { CompanyType } from '../../../../dashboard-server/src/types';
+import { CompanyType } from '../../../../dashboard/dashboard-server/src/types';
 
 export interface ICreateStaff<T> {
   departmentNames: string[];

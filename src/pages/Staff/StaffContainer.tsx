@@ -6,7 +6,7 @@ import { EMPTY_ARRAY, EMPTY_STRING, NOTISTACK_DURATION } from 'common';
 import { trpc } from 'index';
 import { setStatistics } from 'store';
 
-import { UserProfile } from '../../../../dashboard-server/src/types';
+import { UserProfile } from '../../../../dashboard/dashboard-server/src/types';
 import Staff from './Staff';
 
 const StaffContainer: FC = () => {

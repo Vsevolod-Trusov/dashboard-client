@@ -4,7 +4,7 @@ import { ModalProps } from 'react-bootstrap';
 import {
   DepartmentsWithCount,
   UserProfile,
-} from '../../../../dashboard-server/src/types';
+} from '../../../../dashboard/dashboard-server/src/types';
 
 export interface IModal extends ModalProps {
   selectedDepartment?: DepartmentsWithCount;

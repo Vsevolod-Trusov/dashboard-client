@@ -15,7 +15,7 @@ import {
   LinearScale,
   Tooltip,
 } from 'chart.js';
-import { AppRouter } from '../../dashboard-server/src/main';
+import { AppRouter } from '../../dashboard//dashboard-server/src/main';
 
 Chart.register(
   CategoryScale,

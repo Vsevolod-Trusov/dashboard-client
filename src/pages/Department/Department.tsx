@@ -15,7 +15,7 @@ import { styles as infoPanel } from 'pages/Dashboard/components/InfoPanel';
 import {
   DepartmentsWithCount,
   UserProfile,
-} from '../../../../dashboard-server/src/types';
+} from '../../../../dashboard/dashboard-server/src/types';
 import { DEPARTMENTS_TITLE, SHOW_OPEN_MODAL_BUTTON_TITLE } from './constants';
 import styles from './styles';
 import { IDepartment } from './types';

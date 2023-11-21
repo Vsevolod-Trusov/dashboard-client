@@ -1,5 +1,5 @@
 import { Dispatch, SetStateAction } from 'react';
-import { DepartmentsWithCount } from '../../../../dashboard-server/src/types';
+import { DepartmentsWithCount } from '../../../../dashboard/dashboard-server/src/types';
 
 export interface IDepartment {
   departments: DepartmentsWithCount[];

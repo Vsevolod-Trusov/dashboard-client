@@ -12,7 +12,7 @@ import { trpc } from 'index';
 import { useNavigate } from 'react-router-dom';
 import { departmentValidationSchema } from 'validation';
 
-import { CompanyType } from '../../../../dashboard-server/src/types';
+import { CompanyType } from '../../../../dashboard/dashboard-server/src/types';
 import CreateDepartment from './CreateDepartment';
 
 const CreateDepartmentContainer: FC = () => {
