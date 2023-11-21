@@ -1,0 +1,31 @@
+@import 'assets/styles/_variables.module.scss';
+
+.table-wrapper {
+  max-height: 60vh;
+  overflow-y: auto;
+}
+
+.layout {
+  display: flex;
+  min-width: 100%;
+  min-height: 68vh;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.table-custom {
+  thead > tr,
+  tbody > tr {
+    background-color: $dashboard-item;
+  }
+
+  tbody > tr > td,
+  thead > tr > th {
+    background-color: inherit;
+  }
+  height: 100%;
+}
+
+.for-staff-page {
+  background-color: $dashboard-item;
+}
