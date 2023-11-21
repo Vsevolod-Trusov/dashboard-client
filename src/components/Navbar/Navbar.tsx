@@ -32,7 +32,7 @@ const Navbar: FC = () => {
             </a>
             <a
               className={styles['links-container__item']}
-              href={ROUTES.DEPARTMENTS}
+              onClick={() => navigate(ROUTES.DEPARTMENTS)}
             >
               {NAVBAR.DEPARTMENTS}
             </a>
