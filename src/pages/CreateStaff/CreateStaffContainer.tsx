@@ -48,6 +48,8 @@ const CreateStaffContainer: FC = () => {
           variant: 'error',
           autoHideDuration: NOTISTACK_DURATION,
         });
+
+        return;
       }
 
       signIn({

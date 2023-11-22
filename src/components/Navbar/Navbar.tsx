@@ -1,14 +1,11 @@
-import { enqueueSnackbar } from 'notistack';
 import { FC } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-import { NAVBAR, NOTISTACK_DURATION, ROUTES } from 'common';
+import { NAVBAR, ROUTES } from 'common';
 
-import { useCookies } from 'react-cookie';
 import styles from './styles';
 
 const Navbar: FC = () => {
-  const removeCookie = useCookies(['user'])[2];
   const navigate = useNavigate();
   return (
     <nav className={styles['navbar']}>
@@ -76,7 +73,7 @@ const Navbar: FC = () => {
                 className={`bi bi-building-add ${styles['links-container__item']} ${styles['links-container-icon']}`}
               />
             </a>
-            <a
+            {/* <a
               className={styles['links-container__item']}
               onClick={() => {
                 removeCookie('user');
@@ -89,7 +86,7 @@ const Navbar: FC = () => {
               <i
                 className={`bi bi-box-arrow-right ${styles['links-container__item']} ${styles['links-container-icon']}`}
               />
-            </a>
+            </a> */}
           </div>
         </div>
       </div>
